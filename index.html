@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<title>Bus schedule</title>
+	<link rel="icon" href="img/icon.ico" type="image/ico">
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!-- bootstrap footer -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- script-->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<style>
+		@media (max-height: 500px) or (max-width: 1000px) {
+    .ctrldisplay {
+      display: none;
+    }
+}
+	</style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			
+		  </div>
+		  <ul class="nav navbar-nav">
+			<li class="active">
+				
+			</li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="MyBus/admin/index.php"><span class="glyphicon glyphicon-backward"></span> Admin</a></li>
+		  </ul>
+		  
+		</div>
+	  </nav>
+
+
+	<div id="booking" class="section">
+		<!--header-->
+	<header >
+	<div class="ctrldisplay">
+		<!--<a href="index.html"><img src="img/logo.png" width="50%" height="50%"> </a>-->
+	</div>
+	</header>
+
+	
+
+	<div class="section-center">
+	<div class="container">
+
+		<!-- Title and description -->
+
+		<div class="row">
+			<div class="col-md-7 col-md-push-5">
+			<div class="booking-cta">
+
+				<h1>Expressway bus schedule</h1>
+				<p>Search here using destination, start location and desired date to find the bus schedule you want.
+					
+					
+				<br/><br/><br/><br/><br/><br/>
+				<div class="clerButton">
+					
+					<button style  ="  
+					background-color: #282bc4; 
+					border-radius: 8px;
+	
+					
+					color: black;
+					padding: 10px 10px;
+					text-align: center;
+					text-decoration:solid;
+					display: inline-block;
+					font-size: 20px;
+					
+					width: 200px;
+					position: relative;
+					margin-left: auto;
+					margin-left: auto;"
+					type="button"><a href="booking&loginRegistrer/buslogin.php"> <p style="color:rgb(255, 255, 255);font-size: 20px;">Login as a driver</p></a></p>
+				</div>
+				
+			</div>
+
+			
+			</div>
+
+
+
+			
+		
+			
+				
+			
+
+			<!-- Form -->
+
+			<div class="col-md-4 col-md-pull-7">
+				<div class="booking-form">
+				<form method="post" action="result.php">
+			<!-- start location -->
+
+				<div class="form-group">
+					<span class="form-label">Your start location</span>
+						<select name="start" class="form-control" required>
+							<option value="" disabled selected hidden>Please select..</option>
+							<!-- <option value="Galle">Galle</option>
+							<option value="Gampaha">Gampaha</option>							
+							<option value="Kadawatha">Kadawatha</option> -->
+							<option value="Makumbura">Makumbura</option>							
+							<!-- <option value="Matara">Matara</option>
+							<option value="Panadura">Panadura</option> -->
+						</select>
+					<span class="select-arrow"></span>
+				</div>
+			<!-- end location -->
+
+				<div class="form-group">
+					<span class="form-label">Your end location</span>
+						<select name="end" class="form-control" required >
+							<option value="" disabled selected hidden>Please select..</option>
+							<option value="Galle">Galle</option>
+							<option value="Gampaha">Gampaha</option>							
+							<option value="Kadawatha">Kadawatha</option>
+							<!-- <option value="Makumbura">Makumbura</option>							 -->
+							<option value="Matara">Matara</option>
+							<option value="Panadura">Panadura</option>
+						</select>
+					<span class="select-arrow"></span>
+				</div>	
+
+			<!-- Date-->
+
+					<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<span class="form-label">Date</span>
+							<input name="date" class="form-control" type="date" required>
+						</div>
+					</div>		
+					</div>
+
+			<!--button-->
+
+						<div class="form-btn">
+							<input type="submit" value="Check availability" class="submit-btn"></input>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+
+	
+
+<!-- footer -->
+
+<div class="ctrldisplay" > 
+<div class="navbar navbar-default navbar-fixed-bottom" role="navigation" style="background: #151414;">
+    <div class="container" >  
+		
+		<div class="footer">
+    	<ul class="social-icon">
+      		<li class="social-icon__item"><a class="social-icon__link" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+      		</li>
+      		<li class="social-icon__item"><a class="social-icon__link" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+    		</li>
+      		<li class="social-icon__item"><a class="social-icon__link" href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+      		</li>
+      		<li class="social-icon__item"><a class="social-icon__link" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+      		</li>
+    	</ul>
+    	<p> Develop and designed by undergraduates of university of Sri Jayawardenepura Sri Lanka </p>   
+    	<p>&copy;2023 | All Rights Reserved</p>
+  		</div>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
